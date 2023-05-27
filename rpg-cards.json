@@ -1,0 +1,26 @@
+[
+	{
+		"count": 1,
+		"color": "#4a6898",
+		"title": "Sacred Flame",
+		"icon": "magic-swirl",
+		"icon_back": "magic-swirl",
+		"contents": [
+			"subtitle | Evocation cantrip",
+			"rule",
+			"property | Casting Time | 1 action",
+			"property | Range | 60 feet",
+			"property | Components | V, S",
+			"property | Duration | Instantaneous",
+			"rule",
+			"text | Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take <span class=\"roller render-roller\"  >1d8</span> radiant damage. The target gains no benefit from cover for this saving throw.",
+			"text | The spell's damage increases by <span class=\"roller render-roller\"  >1d8</span> when you reach 5th level (<span class=\"roller render-roller\"  >2d8</span>), 11th level (<span class=\"roller render-roller\"  >3d8</span>), and 17th level (<span class=\"roller render-roller\"  >4d8</span>)."
+		],
+		"tags": [
+			"spell",
+			"PHB",
+			"Cantrips",
+			"Evocation"
+		]
+	}
+]
