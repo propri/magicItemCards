@@ -13,6 +13,7 @@ type Item = {
   ac?: string
   properties?: string
   count?: number
+  charges?: number
   source: string
   id: number
 }
@@ -236,6 +237,13 @@ const getCount = (item: Item) => {
     : 1
 }
 
+const getCharges = (item: Item) => {
+  if (item.charges === undefined) {
+    return ''
+  }
+  return `boxes | ${item.charges} | 1.5`
+}
+
 const transformed = magic.map((item) => ({
   count: getCount(item),
 
@@ -249,6 +257,7 @@ const transformed = magic.map((item) => ({
     'fill',
     `text | ${cleanDescription(item.description)}`,
     'fill',
+    getCharges(item),
   ],
 }))
 
