@@ -1,14 +1,14 @@
-import magicItems from './magic_items.json'
+import magicItems from './data/magic_items.json'
 import fs from 'fs'
 
 type Item = {
   name: string
-  description: string
+  description?: string
   category: string
   image?: string
   rarity: string
   cost: number
-  weight: number
+  weight?: number
   classification?: string
   ac?: string
   properties?: string
@@ -32,8 +32,8 @@ const keyValueOverview = {
   keys: new Set<string>(),
 }
 
-for (let item of items) {
-  for (let key in item) {
+for (const item of items) {
+  for (const key in item) {
     keyValueOverview.keys.add(key)
   }
   if (!keyValueOverview.category.has(item.category)) {
@@ -41,19 +41,22 @@ for (let item of items) {
   }
   keyValueOverview.category.set(
     item.category,
-    keyValueOverview.category.get(item.category)! + 1
+    (keyValueOverview.category.get(item.category) ?? 0) + 1
   )
   const image = item?.image ?? 'unknown'
   if (!keyValueOverview.image.has(image)) {
     keyValueOverview.image.set(image, 0)
   }
-  keyValueOverview.image.set(image, keyValueOverview.image.get(image)! + 1)
+  keyValueOverview.image.set(
+    image,
+    (keyValueOverview.image.get(image) ?? 0) + 1
+  )
   if (!keyValueOverview.rarity.has(item.rarity)) {
     keyValueOverview.rarity.set(item.rarity, 0)
   }
   keyValueOverview.rarity.set(
     item.rarity,
-    keyValueOverview.rarity.get(item.rarity)! + 1
+    (keyValueOverview.rarity.get(item.rarity) ?? 0) + 1
   )
   const classification = item?.classification ?? 'unknown'
   if (!keyValueOverview.classification.has(classification)) {
@@ -61,7 +64,7 @@ for (let item of items) {
   }
   keyValueOverview.classification.set(
     classification,
-    keyValueOverview.classification.get(classification)! + 1
+    (keyValueOverview.classification.get(classification) ?? 0) + 1
   )
 }
 
@@ -256,7 +259,7 @@ const transformed = magic.map((item) => ({
   contents: [
     ...getProperties(item),
     'fill',
-    `text | ${cleanDescription(item.description)}`,
+    `text | ${cleanDescription(item.description ?? '')}`,
     'fill',
     getCharges(item),
   ],
