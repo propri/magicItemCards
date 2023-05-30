@@ -226,7 +226,8 @@ const cleanDescription = (description: string) =>
   description
     .replace(/\[([^\]]+)\]/g, (_, tagName) => `<b>${tagName}</b>`)
     .replace(/(\d+)d(\d+)/g, (_, nrDice, valueDice) => `${nrDice}W${valueDice}`)
-    .replace(/DC/g, 'SG')
+    .replace(/\bDC\b/g, 'SG')
+    .replace(/\bAC\b/g, 'RK')
 
 const getCount = (item: Item) => {
   if (item.count !== undefined) {
