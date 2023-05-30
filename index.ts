@@ -81,6 +81,7 @@ const blackList = [
   'Zauberstab der Magieerkennung',
   'Verzaubertes beschlagenes Leder',
   'Handschuhe des Schwimmens und Kletterns',
+  'Geschossfangende',
 
   /* Text zu lang */
   'Staub der Trockenheit (1 Kügelchen)',
@@ -90,9 +91,15 @@ const blackList = [
   'Wurfspeer des Blitzes',
   'Verwundender Dolch',
   'Seil des Kletterns',
+  'Stab der Python',
+  'Federmarke des Vogels',
+  'Onyx Hund',
 
   /* Titel und Text zu lang */
   'Figur der wundersamen Kraft (Goldene Löwen)',
+  'Federmarke des Schwanenboot',
+
+  /* Ladungen passen nicht */
 ]
 
 const magic = items
@@ -107,7 +114,7 @@ const magic = items
   /* aus diversen Gründen ausgeschlossene Gegenstände */
   .filter(({ name }) => !blackList.includes(name))
   /* Ioun-Steine haben zuviel Boilerplate Text, als dass sie auf die Karten passen */
-  .filter(({ name }) => name.match(/^Ioun-Stein/))
+  .filter(({ name }) => !name.match(/^Ioun-Stein/))
 
 //{
 //category: Map(9) {
