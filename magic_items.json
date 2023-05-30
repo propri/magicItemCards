@@ -6584,7 +6584,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "2",
+          "weight": 2,
           "source": "Homebrew (Mundän)",
           "id": 526
         },
@@ -6596,7 +6596,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "1",
+          "weight": 1,
           "source": "Homebrew (Mundän)",
           "id": 527
         },
@@ -6608,7 +6608,7 @@
           "image": "slime",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0.1",
+          "weight": 0.1,
           "source": "Homebrew (Mundän)",
           "id": 528
         },
@@ -6620,7 +6620,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "4",
+          "weight": 4,
           "source": "Homebrew (Mundän)",
           "id": 529
         },
@@ -6632,7 +6632,7 @@
           "image": "shards",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0.5",
+          "weight": 0.5,
           "source": "Homebrew (Mundän)",
           "id": 530
         },
@@ -6643,7 +6643,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0.5",
+          "weight": 0.5,
           "source": "Homebrew (Mundän)",
           "id": 531
         },
@@ -6655,7 +6655,7 @@
           "image": "dead-hand",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 532
         },
@@ -6666,7 +6666,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 533
         },
@@ -6678,7 +6678,7 @@
           "image": "shoe",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 534
         },
@@ -6690,7 +6690,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 535
         },
@@ -6702,7 +6702,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 536
         },
@@ -6714,7 +6714,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 537
         },
@@ -6726,7 +6726,7 @@
           "image": "shards",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0.5",
+          "weight": 0.5,
           "source": "Homebrew (Mundän)",
           "id": 538
         },
@@ -6738,7 +6738,7 @@
           "image": "other",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 539
         },
@@ -6750,7 +6750,7 @@
           "image": "tusk",
           "rarity": "Mundän",
           "cost": 0,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Mundän)",
           "id": 540
         },
@@ -6761,7 +6761,7 @@
           "category": "Wundersame Gegenstände",
           "rarity": "Ungewöhnlich",
           "cost": 15000,
-          "weight": "0",
+          "weight": 0,
           "source": "Homebrew (Magische Gegenstände)",
           "id": 541
         }
