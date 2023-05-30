@@ -76,34 +76,40 @@ const blackList = [
   'Fernglas',
 
   /* Titel zu lang */
-  'Dämpfe einer verbrannten Othure',
-  'Helm des Sprachenverstehens',
-  'Dreizack der Fischherrschaft',
-  'Zweihandschwert des Lebensentzugs',
-  'Kurzschwert des Lebensentzugs',
-  'Armschienen des Bogenschießens',
-  'Zauberstab der Magieerkennung',
-  'Verzaubertes beschlagenes Leder',
-  'Handschuhe des Schwimmens und Kletterns',
-  'Geschossfangende',
+  //'Dämpfe einer verbrannten Othure',
+  //'Helm des Sprachenverstehens',
+  //'Dreizack der Fischherrschaft',
+  //'Zweihandschwert des Lebensentzugs',
+  //'Kurzschwert des Lebensentzugs',
+  //'Armschienen des Bogenschießens',
+  //'Zauberstab der Magieerkennung',
+  //'Verzaubertes beschlagenes Leder',
+  //'Handschuhe des Schwimmens und Kletterns',
+  //'Geschossfangende Handschuhe',
+  //'Staub des Niesens und Erstickens',
+  //'Trank der Gasförmigen Gestalt',
+  //'Amulett des Schutzes gegen Ortung und Ausspähung',
 
   /* Text zu lang */
-  'Staub der Trockenheit (1 Kügelchen)',
-  'Federmarke Peitsche',
-  'Perle der Kraft',
-  'Ioun-Stein der Ernährung',
+  //'Staub der Trockenheit (1 Kügelchen)',
+  //'Federmarke Peitsche',
+  //'Perle der Kraft',
+  //'Ioun-Stein der Ernährung',
   'Wurfspeer des Blitzes',
-  'Verwundender Dolch',
-  'Seil des Kletterns',
-  'Stab der Python',
+  //'Seil des Kletterns',
+  //'Stab der Python',
   'Federmarke des Vogels',
-  'Onyx Hund',
+  //'Onyx Hund',
+  'Langschwert der Verwundung',
+  'Dolch der Verwundung',
 
   /* Titel und Text zu lang */
-  'Figur der wundersamen Kraft (Goldene Löwen)',
-  'Federmarke des Schwanenboot',
+  //'Figur der wundersamen Kraft (Goldene Löwen)',
+  //'Federmarke des Schwanenboot',
+  //'Ring der Gedankenabschirmung',
 
   /* Ladungen passen nicht */
+  'Spukflöte',
 ]
 
 const magic = items
@@ -115,10 +121,34 @@ const magic = items
       item.rarity !== 'Legendär' &&
       item.rarity !== 'Sehr Selten'
   )
-  /* aus diversen Gründen ausgeschlossene Gegenstände */
-  .filter(({ name }) => !blackList.includes(name))
   /* Ioun-Steine haben zuviel Boilerplate Text, als dass sie auf die Karten passen */
   .filter(({ name }) => !name.match(/^Ioun-Stein/))
+  /* zu langer titel? */
+  .filter(({ name }) => {
+    if (name.length >= 27) {
+      console.log(`${name} - title too long`)
+      return false
+    }
+    return true
+  })
+  /* zu langer text? */
+  .filter(({ description, name }) => {
+    if (!description || description.length > 900) {
+      console.log(`${name} - description too long`)
+      return false
+    }
+    return true
+  })
+  /* aus diversen Gründen ausgeschlossene Gegenstände */
+  .filter(({ name }) => {
+    if (blackList.includes(name)) {
+      console.log(`${name} - included in blacklist`)
+      return false
+    }
+    return true
+  })
+
+  .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
 
 //{
 //category: Map(9) {
