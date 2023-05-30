@@ -3892,7 +3892,7 @@
         },
         {
           "name": "Dolch des Giftes",
-          "description": "Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit dieser magischen Waffe. Du kannst eine Aktion verwenden, um die Klinge mit dickem, schwarzem Gift zu überziehen. Das Gift bleibt für 1 Minute oder bis ein Angriff mit dieser Waffe eine Kreatur trifft. Diese Kreatur muss einen C 15 Rettungswurf auf Konstitution bestehen oder 2d10 Giftschaden erleiden und 1 Minute lang [vergiftet] werden. Der Dolch kann bis zur nächsten Morgendämmerung nicht mehr auf diese Weise benutzt werden.",
+          "description": "Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit dieser magischen Waffe. Du kannst eine Aktion verwenden, um die Klinge mit dickem, schwarzem Gift zu überziehen. Das Gift bleibt für 1 Minute oder bis ein Angriff mit dieser Waffe eine Kreatur trifft. Diese Kreatur muss einen DC 15 Rettungswurf auf Konstitution bestehen oder 2d10 Giftschaden erleiden und 1 Minute lang [vergiftet] werden. Der Dolch kann bis zur nächsten Morgendämmerung nicht mehr auf diese Weise benutzt werden.",
           "category": "Waffe",
           "image": "dagger",
           "rarity": "Selten",
@@ -4045,13 +4045,14 @@
           "id": 291
         },
         {
-          "name": "Stab der Verwesung",
+          "name": "Stab der Verkümmerung",
           "description": "Dieser Stab hat 3 Ladungen und erhält täglich bei Sonnenaufgang 1d3 verbrauchte Ladungen zurück.<br />Der Stab kann wie ein magischer Kampfstab geschwungen werden. Bei einem Treffer verursacht er Schaden wie ein normaler Kampfstab, und du kannst 1 Ladung ausgeben, um dem Ziel zusätzlich 2d10 nekrotischen Schaden zuzufügen. Zusätzlich muss das Ziel einen Rettungswurf auf DC 15 Konstitution bestehen oder hat 1 Stunde lang [Nachteil] bei allen Fertigkeitswürfen oder Rettungswürfen, die Stärke oder Konstitution verwenden.",
           "category": "Wundersame Gegenstände",
           "image": "staff",
           "rarity": "Selten",
-          "properties": "erfordert Einstimmung eines Klerikers",
+          "properties": "erfordert Einstimmung eines Klerikers, Druiden oder Hexenmeisters",
           "cost": 300000,
+          "charges": 3,
           "source": "SRD",
           "id": 292
         },
