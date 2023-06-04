@@ -4018,7 +4018,7 @@
           "id": 288
         },
         {
-          "name": "Ioun-Stein of Intellect",
+          "name": "Ioun-Stein des Verstandes",
           "description": "Wenn du eine Aktion verwendest, um einen dieser Steine in die Luft zu werfen, umkreist der Stein deinen Kopf in einer Entfernung von 1d3 Fuß und verleiht dir einen Vorteil. Danach muss eine andere Kreatur eine Aktion verwenden, um den Stein zu ergreifen oder zu keschern, um ihn von dir zu trennen, indem sie entweder einen erfolgreichen Angriffswurf gegen AC 24 oder einen erfolgreichen DC 24 Geschicklichkeitswurf (Akrobatik) macht. Du kannst eine Aktion verwenden, um den Stein zu ergreifen und zu verstauen, was seine Wirkung beendet.<br /><br />Ein Stein hat AC 24, 10 Trefferpunkte und Widerstand gegen jeglichen Schaden. Er wird als Gegenstand betrachtet, der getragen wird, während er deinen Kopf umkreist.<br /><br />Wirkung für diesen Ioun-Stein: Dein Intelligenzwert erhöht sich um 2, bis zu einem Maximum von 20, während diese marmorierte scharlachrote und blaue Kugel deinen Kopf umkreist.",
           "category": "Wundersame Gegenstände",
           "image": "ioun-stone",
@@ -5057,7 +5057,7 @@
         },
         {
           "name": "Stab der Bezauberung",
-          "description": "Wenn du diesen Stab in der Hand hältst, kannst du eine Aktion nutzen, um eine seiner zehn Ladungen zu verbrauchen, um mit ihm Person bezaubern, Befehl oder Sprachen verstehen zu wirken, indem du deinen Zauber-Verteidigungs-DC nutzt. Der Stab kann auch als magischer Kampfstab verwendet werden.",
+          "description": "Wenn du diesen Stab in der Hand hältst, kannst du eine Aktion nutzen, um eine seiner zehn Ladungen zu verbrauchen, um mit ihm Person bezaubern, Befehl oder Sprachen verstehen zu wirken, indem du deinen Zauber-Rettungswurf-DC nutzt. Der Stab kann auch als magischer Kampfstab verwendet werden.<br/>Wenn du den Stab hälst und dein Rettungswurf gegen einen Verzauberungszauber scheitert, der nur dich als Ziel hat, kannst du deinen fehlgeschlagenen Rettungswurf in einen erfolgreichen verwandeln. Diese Eigenschaft des Stabs kannst du erst nach dem nächsten Morgengrauen wieder nutzen. Wenn dir ein Rettungswurf gegen einen Verzauberungszauber gelingt, der nur dich als Ziel hat (mit oder ohne die Fähigkeit des Stabs) kannst du deine Reaktion nutzen, um 1 Ladung vom Stab zu verbrauchen und den Zauber auf seinen Urheber anzuwenden, als ob du den Zauber gewirkt hättest. <br />Der Stab erhält täglich im Morgengrauen 1W8 + 2 verbrauchte Ladungen zurück. Wenn du die letzte Ladung des Stabs verbrauchst, würfele einen W20. Bei einer 1 wird der Stab zu einem nichtmagischen Kampfstab.",
           "category": "Wundersame Gegenstände",
           "image": "staff",
           "rarity": "Selten",
@@ -5196,7 +5196,7 @@
           "id": 391
         },
         {
-          "name": "Wand of Paralysis",
+          "name": "Zauberstab der Paralyse",
           "description": "Dieser Stab hat 7 Ladungen. Wenn du ihn in der Hand hältst, kannst du eine Aktion nutzen, um 1 seiner Ladungen zu verbrauchen, um einen dünnen blauen Strahl von der Spitze zu einer Kreatur in einem Umkreis von 60 Fuß zu schicken, die du sehen kannst. Das Ziel muss einen DC 15 Rettungswurf auf Konstitution  bestehen oder ist eine Minute lang [gelähmt]. Am Ende jeder Runde des Ziels kann es den Rettungswurf wiederholen und den Effekt bei einem Erfolg für sich selbst beenden.<br />Der Zauberstab erhält täglich bei Sonnenaufgang 1d6 + 1 verbrauchte Ladung zurück. Wenn du die letzte Ladung des Zauberstabs verbrauchst, wirf einen d20. Bei einer 1 zerbröselt der Stab zu Asche und wird zerstört.",
           "category": "Wundersame Gegenstände",
           "image": "wand",
