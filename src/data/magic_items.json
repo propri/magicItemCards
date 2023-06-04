@@ -5056,12 +5056,13 @@
           "id": 379
         },
         {
-          "name": "Stab der Bezauberung",
+          "name": "Zauberstecken der Bezauberung",
+          "original": "Staff of Charming",
           "description": "Wenn du diesen Stab in der Hand hältst, kannst du eine Aktion nutzen, um eine seiner zehn Ladungen zu verbrauchen, um mit ihm Person bezaubern, Befehl oder Sprachen verstehen zu wirken, indem du deinen Zauber-Rettungswurf-DC nutzt. Der Stab kann auch als magischer Kampfstab verwendet werden.<br/>Wenn du den Stab hälst und dein Rettungswurf gegen einen Verzauberungszauber scheitert, der nur dich als Ziel hat, kannst du deinen fehlgeschlagenen Rettungswurf in einen erfolgreichen verwandeln. Diese Eigenschaft des Stabs kannst du erst nach dem nächsten Morgengrauen wieder nutzen. Wenn dir ein Rettungswurf gegen einen Verzauberungszauber gelingt, der nur dich als Ziel hat (mit oder ohne die Fähigkeit des Stabs) kannst du deine Reaktion nutzen, um 1 Ladung vom Stab zu verbrauchen und den Zauber auf seinen Urheber anzuwenden, als ob du den Zauber gewirkt hättest. <br />Der Stab erhält täglich im Morgengrauen 1W8 + 2 verbrauchte Ladungen zurück. Wenn du die letzte Ladung des Stabs verbrauchst, würfele einen W20. Bei einer 1 wird der Stab zu einem nichtmagischen Kampfstab.",
           "category": "Wundersame Gegenstände",
           "image": "staff",
           "rarity": "Selten",
-          "properties": "Erfordert Einstimmung eines Barden",
+          "properties": "Erfordert Einstimmung eines Barden, Kleriker, Druiden, Zauberer, Hexenmeister oder Magiers",
           "cost": 1200000,
           "charges": 10,
           "source": "SRD",
