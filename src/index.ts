@@ -1,6 +1,9 @@
 import magicItems from './data/magic_items.json'
 import fs from 'fs'
 
+const list = ['Heiltrank']
+const useList = false
+
 type Item = {
   name: string
   description?: string
@@ -112,43 +115,62 @@ const blackList = [
   'Spukflöte',
 ]
 
-const magic = items
-  .filter(
-    (item) =>
-      /* nur uncommon + rare Gegenstände */
-      item.rarity !== 'Mundän' &&
-      item.rarity !== 'Gewöhnlich' &&
-      item.rarity !== 'Legendär' &&
-      item.rarity !== 'Sehr Selten'
-  )
-  /* Ioun-Steine haben zuviel Boilerplate Text, als dass sie auf die Karten passen */
-  .filter(({ name }) => !name.match(/^Ioun-Stein/))
-  /* zu langer titel? */
-  .filter(({ name }) => {
-    if (name.length >= 27) {
-      console.log(`${name} - title too long`)
-      return false
-    }
-    return true
-  })
-  /* zu langer text? */
-  .filter(({ description, name }) => {
-    if (!description || description.length > 900) {
-      console.log(`${name} - description too long`)
-      return false
-    }
-    return true
-  })
-  /* aus diversen Gründen ausgeschlossene Gegenstände */
-  .filter(({ name }) => {
-    if (blackList.includes(name)) {
-      console.log(`${name} - included in blacklist`)
-      return false
-    }
-    return true
-  })
+let magic: Item[]
 
-  .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+//const magic = items
+if (!useList) {
+  magic = items
+    .filter(
+      (item) =>
+        /* nur uncommon + rare Gegenstände */
+        item.rarity !== 'Mundän' &&
+        //item.rarity !== 'Gewöhnlich' &&
+        item.rarity !== 'Legendär' &&
+        item.rarity !== 'Sehr Selten'
+    )
+    .filter(
+      (item) =>
+        item.rarity !== 'Gewöhnlich' || item.category === 'Tränke und Öle'
+    )
+    /* Ioun-Steine haben zuviel Boilerplate Text, als dass sie auf die Karten passen */
+    .filter(({ name }) => {
+      if (name.match(/^Ioun-Stein/)) {
+        console.log(`${name} - Ioun Steine, zu langer title + Beschreibung`)
+        return false
+      }
+      return true
+    })
+    /* zu langer titel? */
+    .filter(({ name }) => {
+      if (name.length >= 27) {
+        console.log(`${name} - title too long`)
+        return false
+      }
+      return true
+    })
+    /* zu langer text? */
+    .filter(({ description, name }) => {
+      if (!description || description.length > 900) {
+        console.log(`${name} - description too long`)
+        return false
+      }
+      return true
+    })
+    /* aus diversen Gründen ausgeschlossene Gegenstände */
+    .filter(({ name }) => {
+      if (blackList.includes(name)) {
+        console.log(`${name} - included in blacklist`)
+        return false
+      }
+      return true
+    })
+
+    .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+} else {
+  magic = items
+    .filter(({ name }) => list.includes(name))
+    .sort(({ name: nameA }, { name: nameB }) => nameA.localeCompare(nameB))
+}
 
 //{
 //category: Map(9) {
